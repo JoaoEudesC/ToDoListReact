@@ -1,0 +1,51 @@
+.task{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+}
+
+
+.details{
+    text-align: left;
+
+}
+
+
+/*Repare que mesmo através de classes eu posso acessar elemenos html, como estou acessando o h4 dentro do elemento com a classe details  */
+
+
+
+.details h4{
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Repare quando a gente quer um transition no hover a gente adiciona o transition no elemento e não diretamente no hover */
+
+
+.actions i{
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #282c34;
+    color: #fff;
+    padding: 0.4em;
+    transition: 0.5;
+}
+
+.actions i:hover{
+    color: #61dafb;
+}

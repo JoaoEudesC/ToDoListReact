@@ -1,0 +1,39 @@
+
+/* Utilizamos o opacity para dar uma opacidade no elemento para que possamos ver através do elemento como se fosse um pocuo transparente*/
+
+/*com estas duas configurações do fade e do modal a gente colocou o modal bem a frente de todos os elementos da página utilizando o z-index para dar profundidade e colocar os elementos a frente da página */
+
+.fade{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+
+.Modal{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Modal h2{
+    margin-bottom: 1em;
+}
+
+
+.Modal form{
+    width: 90%;
+}
