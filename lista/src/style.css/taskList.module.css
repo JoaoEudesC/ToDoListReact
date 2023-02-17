@@ -5,6 +5,9 @@
     margin: 0 auto;
     border-bottom: 1px solid #ccc;
     padding: 1em;
+    background-color: rgb(135, 135, 241);
+    box-shadow: 1px 1px 1px 1px black;
+    margin-top: 10px;
 }
 
 

@@ -4,16 +4,21 @@ import React from "react"
 
 
 //Inteface props
-interface Props{
-    children:React.ReactNode
-}
+    interface Props{
+        children:React.ReactNode
+    }
 
 
 
 export const Modal = ({children}:Props) =>{
+
+    const closeModal = (e:React.MouseEvent):void =>{
+        const modal = document.querySelector("#modal")
+        modal!.classList.add("hide")
+    }
     return(
-        <div id="modal"> 
-            <div className={style.fade}></div>
+        <div id="modal" className="hide"> 
+            <div className={style.fade} onClick={closeModal}></div>
             <div className={style.Modal}>
                 <h2>Texto Modal</h2>
                 {children}
@@ -21,3 +26,7 @@ export const Modal = ({children}:Props) =>{
         </div>
     )
 }
+
+
+
+
